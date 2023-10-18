@@ -43,3 +43,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Ignora la carpeta node_modules
+node_modules/
