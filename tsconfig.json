@@ -17,6 +17,12 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "paths": {
+      //ruta corta, donde va a consultar las cosas
+      "@core/*":["src/app/core/*"],
+      "@modules/*":["src/app/modules/*"],
+      "@shared/*":["src/app/shared/*"]
+    },
     "lib": [
       "es2018",
       "dom"
