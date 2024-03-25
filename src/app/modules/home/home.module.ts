@@ -10,6 +10,7 @@ import { SharedModule } from '@shared/shared.module';
   declarations: [
     HomePageComponent
   ],
+  //IMPORTAR LOS QUE SE NECESITA
   imports: [
     //home estara asociado al home routing (rutas)
     CommonModule, //

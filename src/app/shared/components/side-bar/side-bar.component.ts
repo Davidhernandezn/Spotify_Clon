@@ -12,6 +12,8 @@ mainMenu:{ defaultOptions:Array<any>, accessLink: Array<any>} = {defaultOptions:
 
   constructor() { }
 
+  //ciclo inicial  se EJECUTA DESPUES DEL CONSTRUCTOR
+  //USADO PARA LLAMAR SERVICIOS O PETICIONES, LLENAR DATOS
   ngOnInit(): void {
     //ciclo de vide (son 8)
     //ciclo inicial luego del constructor para llamar servicios, peticiones datos llenar variables
