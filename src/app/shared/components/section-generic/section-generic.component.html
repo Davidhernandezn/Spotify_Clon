@@ -1,0 +1,18 @@
+<div class="section--generic">
+    <h1 class="section--generic__title">{{title}}</h1>
+
+    <div class="section--generic__player--zone">
+        <!--ngClass = AHORA ES CONDICINAL DEPENDE DE UNA VARIABLE BOLEAN --PARA TAMAÑO DE CARDS-->
+        <!--AGREGAR NUWVAS CLASES NUEVAS CONDICIOENS-->
+        <ul class="player--list" [ngClass]="{'card-small':mode === 'small','card-big':mode === 'big'}">
+             <li *ngFor="let track of dataTracks">
+                <!-- {{track | json}} VER DATOS DE UN OBJECT
+                track.name VER EL DATO
+                -->
+
+                {{track.name}}
+                <!-- <app-card-player [track]="track" [mode]="mode"></app-card-player> -->
+            </li> 
+        </ul>
+    </div>
+</div>

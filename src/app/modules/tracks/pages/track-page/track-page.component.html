@@ -1,1 +1,9 @@
-<p>track-page works!</p>
+<!--tracksm - PADRE-->
+
+<div class="tracks-page">
+    <!-- HIJOS -->
+    <!--SECCION TOP SAMLL-->
+    <app-section-generic [dataTracks]="mockTracksList" [mode]="'small'" [title]="'¡La mejor musica del mundo!'"></app-section-generic>
+    <!--SECCION MEDIUM SMALL, importarlos en el modulo para poder usarlos-->
+    <app-section-generic  [dataTracks]="mockTracksList" [mode]="'big'" [title]="'Lo nuevo en Trova'"></app-section-generic>
+</div>
