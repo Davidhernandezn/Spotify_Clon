@@ -10,7 +10,10 @@
                 track.name VER EL DATO
                 -->
 
-                {{track.name}}
+                <!--LLAMAR COMPONENTE, AGREGAR VALORES-->
+                <app-card-player [track]="track" [mode]="mode"></app-card-player>
+
+                <!-- {{track.name}} LLAMAR CANCION-->
                 <!-- <app-card-player [track]="track" [mode]="mode"></app-card-player> -->
             </li> 
         </ul>

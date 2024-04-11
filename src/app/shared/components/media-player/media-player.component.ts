@@ -1,3 +1,4 @@
+import { TrackModel } from './../../../core/models/tracks.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MediaPlayerComponent implements OnInit {
 
-  mockCover:any = {
-  cover:'https://i.ytimg.com/vi/ewmJXi1gkbI/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgSChAMA8=&rs=AOn4CLDvSGt3OfSk7kAUFp_yuQOE1uP_hg',
-  album:'Solo 3',
-  name:'Una mirada'
-}
+  //OBJETO UTILIZADO EN EL FRONT
+  //mockCover va a ser tipo TrackModel  
+  mockCover:TrackModel = {
+    album: 'Hombres de Humo',
+    name: 'Seseos',
+    url: 'http://localhost/track.mp3',
+    _id: '1',
+    cover: 'https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6b/c2/49/6bc249b5-cb91-c98b-8024-7f59717dc7de/artwork.jpg/486x486bb.png'
+  }
 
   constructor() { }
 
